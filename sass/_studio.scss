@@ -1,0 +1,237 @@
+/* Studio */
+/* Section Hero */
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
+  height: 600px;
+  background-image: linear-gradient(
+      var(--dark-bcd-tpnt-color),
+      var(--dark-bcd-tpnt-color)
+    ),
+    url(../images/decorative/hero.jpg);
+  background-color: var(--dark-bcd-color--);
+  text-align: center;
+}
+
+.hero__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-color--);
+}
+
+/* Features */
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.features__icon {
+  padding: 0;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background-color: var(--secondary-bcd-color--);
+  border-radius: 4px;
+}
+
+.features__title {
+  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--titel-text-color--);
+}
+
+.features__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.features__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.features__list--item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+/* Product */
+.product {
+  padding-bottom: 94px;
+}
+
+.product__title {
+  margin: 0;
+  margin-bottom: 50px;
+  @include title();
+}
+
+.product__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.product-list--item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+/* .product-item {
+  position: relative;
+} */
+
+.product__thumb {
+  position: relative;
+}
+
+.product__backdrop {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.product__text {
+  padding-top: 27px;
+  padding-bottom: 27px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color--);
+}
+
+/* Team */
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--secondary-bcd-color--);
+}
+
+.team__title {
+  margin: 0;
+  margin-bottom: 50px;
+  @include title();
+}
+
+.team__list {
+  display: flex;
+}
+
+.team__part {
+  margin-right: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: var(--white-color--);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team__part:last-child {
+  margin-right: 0;
+}
+
+.team__card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.team__title--name {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.187;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team__subtitle {
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  padding-bottom: 30px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.187;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color--);
+}
+
+.social__list--link {
+  fill: var(--icon-color);
+}
+
+.social__list--link:hover,
+.social__list--link:focus {
+  fill: var(--white-color--);
+  background-color: var(--accent-color--);
+}
+
+/* Customers */
+.customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.customers__title {
+  margin-bottom: 50px;
+  @include title();
+}
+
+.customers__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.customers__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  fill: var(--icon-color);
+  transition: border 250ms, fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color--);
+    border: 1px solid var(--accent-color--);
+  }
+}

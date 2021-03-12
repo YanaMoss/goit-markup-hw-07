@@ -1,0 +1,16 @@
+$colors: (
+  "white-color": #ffffff,
+  "black-color": #000000,
+  "grey-color": #757575,
+  "title-color": #212121,
+  "accent-color": rgba(33, 150, 243, 1),
+  "accent-color-active": rgba(24, 140, 232, 1),
+  "secondary-bcd-color": #f5f4fa,
+  "dark-bcd-color": rgba(47, 48, 58, 1),
+  "icon-color": #afb1b8,
+  "heder-line": #ececec,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
