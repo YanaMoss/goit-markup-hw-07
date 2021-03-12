@@ -1,16 +1,19 @@
-$colors: (
-  "white-color": #ffffff,
-  "black-color": #000000,
-  "grey-color": #757575,
-  "title-color": #212121,
-  "accent-color": rgba(33, 150, 243, 1),
-  "accent-color-active": rgba(24, 140, 232, 1),
-  "secondary-bcd-color": #f5f4fa,
-  "dark-bcd-color": rgba(47, 48, 58, 1),
-  "icon-color": #afb1b8,
-  "heder-line": #ececec,
-);
+//Color
+$white-color: #ffffff;
+$white-color-text: rgba(255, 255, 255, 0.6);
+$icon-bcd: rgba(255, 255, 255, 0.1);
 
-@function getColor($key) {
-  @return map-get($colors, $key);
-}
+$black-color: #000000;
+$title-color: #212121;
+$dark-bcd-color: rgba(47, 48, 58, 1);
+$backdrop-color: rgba(0, 0, 0, 0.2);
+$dark-bcd-tpnt-color: rgba(47, 48, 58, 0.4);
+
+$primary-text-color: #757575;
+$icon-color: #afb1b8;
+$heder-line: #ececec;
+$secondary-bcd-color: #f5f4fa;
+
+$accent-color: rgba(33, 150, 243, 1);
+$accent-color-active: rgba(24, 140, 232, 1);
+$backdrop-accent: rgba(33, 150, 243, 0.9);
